@@ -1,11 +1,11 @@
 export default {
-  name: "tempName",
+  name: "Meer",
 
-  emailContact: "temp2Email",
+  emailContact: "meerobaloch00@gmail.com",
 
-  landingName: "meer",
+  landingName: "Meer",
 
-  landingPara: "temp4Para",
+  landingPara: "I'm a Canadian student studying computer science, naturally curious, and perpetually enhancing my comprehension across diverse technologies!",
 
   landingImage: "temp5Img",
 
@@ -29,12 +29,12 @@ export default {
   ],
   socials: [
     {
-      name: "git",
-      url: "urlhere",
+      name: "Git",
+      url: "https://github.com/meeroTheo",
     },
     {
       name: "LinkedIn",
-      url: "urlhere",
+      url: "https://www.linkedin.com/in/meertbaloch/",
     },
   ],
 };
