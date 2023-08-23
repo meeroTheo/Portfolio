@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
+/* @import url ("https://fonts.googleapis.com/css2?family=Roboto&display=swap") */
+/* 
+Justify content: along the main axis (column -> vertical alignment, row -> horizontal alignment)
+Align items: along the cross axis (column -> horizontal alignment, row -> vertical alignment
+} */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Home*/
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 5rem;
+}
+.homeContainer .homeHeadWrapper {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+/*Header*/
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 35px;
+}
+.headerContainer button {
+  border-radius: 25px;
+  padding: 10 10px; /* 0 top/bottom, 20px left/right */
+}
+
+/*Projects*/
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20rem;
+}
+.projectsContainer .projectsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-button {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  transition: opacity 0.2s ease-in-out;
+  top: 50px;
+  padding: 7px 60px;
+  border-radius: 25px;
+}
+
+.card:hover .card-button {
+  opacity: 1;
+}
+
+/*Contact*/
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 22rem;
+}
+.socialsContainer li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 3rem;
+}
