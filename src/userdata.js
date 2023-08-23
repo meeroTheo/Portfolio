@@ -5,7 +5,7 @@ export default {
 
   landingName: "Meer",
 
-  landingPara: "I'm a Canadian student studying computer science, naturally curious, and perpetually enhancing my comprehension across diverse technologies!",
+  landingPara: "I'm a Canadian student pursuing computer science, driven by a natural curiosity to enhance my understanding across a range of diverse technologies.",
 
   landingImage: "temp5Img",
 
