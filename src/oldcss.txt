@@ -1,0 +1,186 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Header*/
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 35px;
+}
+.headerContainer button {
+  border-radius: 25px;
+  padding: 10 10px; /* 10 top/bottom, 10px left/right */
+  border: 2px solid #000;
+  font-weight: 500;
+}
+/*Home*/
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  justify-content: center;
+}
+.homeContainer .homeHeadWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*About*/
+/* background-color: #00008b; */
+
+.aboutContainer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 35rem;
+  margin-top: 30rem;
+  background-color: black;
+  color: white;
+}
+.aboutContent {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.aboutContent p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.skillsContainer {
+  position: relative;
+  margin-top: 15rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 30rem;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.skillList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem;
+}
+.skillBoxContainer {
+  flex: 1;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  padding: 60px 35px;
+}
+
+.skillBoxContainer:not(:last-child) {
+  border-right: 1px solid #e6ecf8;
+}
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .skillsContainer {
+    height: fit-content;
+  }
+  .skillList {
+    flex-direction: column; /* Stack skill boxes vertically */
+    align-items: center; /* Center align skill boxes */
+  }
+
+  .skillBoxContainer:not(:last-child) {
+    border-right: none; /* Remove right border for stacked skill boxes */
+    border-bottom: 1px solid #e6ecf8; /* Add bottom border for separation */
+  }
+}
+
+/*Projects*/
+.projectsContainer {
+  margin-top: 75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.projectsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-button {
+  opacity: 0;
+  display: flex;
+  transition: opacity 0.2s ease-in-out;
+  padding: 7px 60px;
+  border-radius: 25px;
+  margin-top: 3rem;
+}
+
+.card:hover .card-button {
+  opacity: 1;
+}
+
+/*Contact*/
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10rem;
+}
+/* Adjust the space between items evenly */
+.socialsContainer li {
+  list-style-type: none;
+  padding: 0; /* Remove default list padding */
+  display: inline-flex;
+  margin: 0 1rem;
+}
+.form-control {
+  border-radius: 0.25rem; /* Adjust the value to your preference */
+}
+/*Contact Form*/
+.contactHeaderContainer {
+  margin-top: 2rem;
+}
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contactHeaderMessage {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactFormContainer button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 7px 40px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+}

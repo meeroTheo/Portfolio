@@ -4,67 +4,150 @@
 Justify content: along the main axis (column -> vertical alignment, row -> horizontal alignment)
 Align items: along the cross axis (column -> horizontal alignment, row -> vertical alignment
 } */
+/*europa font, eurostile*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/*Montserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/*Titillium Web*/
 html {
   scroll-behavior: smooth;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background: #fff;
-  font-family: "Open Sans";
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
-.App {
-  height: 100vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-/*Home*/
 
-.homeContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  top: 5rem;
-}
-.homeContainer .homeHeadWrapper {
-  position: relative;
-  top: 2rem;
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-}
-/*Header*/
+/* Header */
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
-  margin-top: 35px;
+  margin-top: 1rem;
 }
 .headerContainer button {
   border-radius: 25px;
-  padding: 10 10px; /* 0 top/bottom, 20px left/right */
+  padding: 10 10px; /* 10 top/bottom, 10px left/right */
+  border: 2px solid #000;
+  font-weight: 500;
+}
+.weatherContainer {
+  font-size: medium;
+  font-weight: 500;
 }
 
-/*Projects*/
-.projectsContainer {
+/* Home */
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rem;
+  justify-content: space-between;
+}
+/* background-color: #00008b; */
+/* About */
+.aboutContainer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 35rem;
+  margin-top: 30rem;
+  background-color: black;
+  color: white;
+}
+.aboutContent {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 20rem;
+  align-items: center;
+  margin-top: 5rem;
 }
-.projectsContainer .projectsList {
+/*Skills*/
+.skillsContainer {
+  margin-top: 15rem;
+  margin-left: 13rem;
+  margin-right: 13rem;
+  height: 30rem;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.skillList {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  height: 30rem;
+}
+
+.skillBoxContainer {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  flex: 1;
+  height: auto;
+  font-weight: 500;
+  font-size: 17px;
+
+  padding: 1rem;
+}
+.skillBoxContainer:not(:last-child) {
+  border-right: 1px solid #e6ecf8;
+}
+/* Styles for smaller screens (phones) */
+@media (max-width: 975px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container vertically and horizontally */
+    padding: 2rem; /* Add padding instead of margin */
+
+    border-radius: 15px;
+    border-top: 1px solid #e6ecf8; /* Add top border for phones */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-width: 300px; /* Adjust the value as needed */
+    height: fit-content;
+    margin: 0rem 3rem;
+  }
+
+  .skillList {
+    flex-direction: column; /* Stack skill boxes on top of each other for phones */
+    height: fit-content;
+  }
+
+  /* .skillBoxContainer {
+    height: fit-content;
+    /* height: auto; Adjust height for phones 
+  } */
+
+  .skillBoxContainer:not(:last-child) {
+    border-right: none; /* Remove right border for phones */
+    border-bottom: 1px solid #e6ecf8; /* Add bottom border for phones */
+  }
+}
+
+/* Projects*/
+.projectsContainer {
+  margin-top: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
+}
+.projectsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  transition: all 0.9s ease;
 }
 .card-container {
   position: relative;
@@ -72,30 +155,108 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .card-button {
-  position: absolute;
   opacity: 0;
   display: flex;
-  transition: opacity 0.2s ease-in-out;
-  top: 50px;
+  transition: opacity 0.3s ease-in-out;
   padding: 7px 60px;
   border-radius: 25px;
+  margin-top: 3rem;
 }
-
 .card:hover .card-button {
   opacity: 1;
+}
+@media (max-width: 975px) {
+  .projectsContainer {
+    margin-top: 140rem;
+  }
 }
 
 /*Contact*/
 .contactContainer {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 22rem;
+  position: absolute;
+  margin-top: 10rem;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  text-align: center;
 }
-.socialsContainer li {
-  list-style-type: none;
-  display: inline;
-  padding-right: 3rem;
+/* Adjust the space between items evenly */
+.socialsContainer a {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 1rem;
+  color: white;
+  padding: 0 1rem; /* Add padding inside each item */
+}
+
+.form-control {
+  border-radius: 0.25rem; /* Adjust the value to your preference */
+}
+/*Contact Form*/
+.contactHeaderContainer {
+  margin-top: 2rem;
+}
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.closeButton a {
+  color: black;
+}
+
+.contactHeaderMessage {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactFormContainer button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 7px 40px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+}
+
+/*scroll*/
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  /* border-radius: 3px; Rounded corners for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* For Firefox */
+/* Width of the scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #f1f1f1;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }

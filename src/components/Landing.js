@@ -1,6 +1,7 @@
 import Home from "./Home";
 import ProjectsList from "./ProjectsList";
 import Header from "./Header";
+import About from "./About";
 import data from "../userdata";
 
 import Contact from "./Contact";
@@ -12,9 +13,13 @@ const Landing = () => {
         <Header />
         <Home name={data.landingName} paragraph={data.landingPara} />
       </div>
-      <ProjectsList projects={data.projects} />
-
-      <Contact email={data.emailContact} socials={data.socials} />
+      <div className="fullWidth">
+        <About skills={data.skills} para={data.landingPara} />
+      </div>
+      <div className="fullPage">
+        <ProjectsList projects={data.projects} />
+        <Contact email={data.emailContact} socials={data.socials} />
+      </div>
     </div>
   );
 };

@@ -6,25 +6,19 @@ const Contact = ({ email, socials }) => {
   return (
     <div className="contactContainer">
       <div className="socialsContainer">
-        <ul>
-          <li>
-            <a href={`mailto:${email}`}>
-              <EmailIcon />
-            </a>
-          </li>
-          <li>
-            <a href={socials[0].url}>
-              <GitHubIcon />
-            </a>
-          </li>
-          <li>
-            <a href={socials[1].url}>
-              <LinkedInIcon />
-            </a>
-          </li>
-        </ul>
+        <a href={`mailto:${email}`}>
+          <EmailIcon sx={{ fontSize: "2rem" }} />
+        </a>
+        <a href={socials[0].url}>
+          <GitHubIcon sx={{ fontSize: "2rem" }} />
+        </a>
+
+        <a href={socials[1].url}>
+          <LinkedInIcon sx={{ fontSize: "2rem" }} />
+        </a>
       </div>
     </div>
   );
 };
+
 export default Contact;

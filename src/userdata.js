@@ -1,14 +1,37 @@
 export default {
-  name: "Meer",
+  name: "tempName",
 
-  emailContact: "meerobaloch00@gmail.com",
+  emailContact: "temp2Email",
 
-  landingName: "Meer",
+  landingName: "meer",
 
-  landingPara: "I'm a Canadian student pursuing computer science, driven by a natural curiosity to enhance my understanding across a range of diverse technologies.",
+  landingPara: "temp4Para",
 
   landingImage: "temp5Img",
 
+  skills: [
+    {
+      id: 1,
+      title: "Full Stack Developer",
+      info: "I like the creativity of coding, and bringing ideas into reality.",
+      subheader: "React, Node, MongoDB",
+      tools: ["Bootstrap", "Material UI", "GitHub"],
+    },
+    {
+      id: 2,
+      title: "Machine Learning Developer",
+      info: "I like the creativity of coding, and bringing ideas into reality.",
+      subheader: "NumPy, Pandas, Scikit-learn",
+      tools: ["Bootstrap", "Material UI", "GitHub"],
+    },
+    {
+      id: 3,
+      title: "Interests",
+      info: "I like the creativity of coding, and bringing ideas into reality.",
+      subheader: "temp",
+      tools: ["Bootstrap", "Material UI", "GitHub"],
+    },
+  ],
   projects: [
     {
       id: 1,
@@ -26,15 +49,23 @@ export default {
       imageSrc: "assets/temp.jpg2",
       git: "https://github.com/2",
     },
+    {
+      id: 3,
+      title: "temp3",
+      short: "temp3",
+      tech: "Python (pandas)2",
+      imageSrc: "assets/temp.jpg2",
+      git: "https://github.com/2",
+    },
   ],
   socials: [
     {
-      name: "Git",
-      url: "https://github.com/meeroTheo",
+      name: "git",
+      url: "urlhere",
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/meertbaloch/",
+      url: "urlhere",
     },
   ],
 };
