@@ -7,7 +7,9 @@ const Header = () => {
     <div className="headerContainer">
       <Weather />
       <Link to="/contact">
-        <Button variant="outline-dark">Say Hello</Button>
+        <Button className="customButton" variant="outline-dark">
+          Say Hello
+        </Button>
       </Link>
     </div>
   );

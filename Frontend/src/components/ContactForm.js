@@ -10,18 +10,21 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    try {
-      await emailService.sendEmail(formData);
+
+    const emailData = {
+      to: "meerobaloch00@gmail.com",
+      subject: "New Contact Form Submission",
+      text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: \n${formData.message}`,
+    };
+    emailService.sendEmail(emailData).then((response) => {
       setFormData({
         name: "",
         email: "",
         message: "",
       });
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    });
   };
 
   const handleInputChange = (event) => {

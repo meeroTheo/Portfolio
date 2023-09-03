@@ -7,8 +7,6 @@ Align items: along the cross axis (column -> horizontal alignment, row -> vertic
 /*europa font, eurostile*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 /*Montserrat*/
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-/*Titillium Web*/
 html {
   scroll-behavior: smooth;
 }
@@ -52,7 +50,7 @@ body {
   right: 0px;
   height: 35rem;
   margin-top: 30rem;
-  background-color: black;
+  background-color: #f73663;
   color: white;
 }
 .aboutContent {
@@ -66,7 +64,7 @@ body {
   margin-top: 15rem;
   margin-left: 13rem;
   margin-right: 13rem;
-  height: 30rem;
+  height: 37rem;
   background-color: white;
   color: black;
   border-radius: 15px;
@@ -77,7 +75,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  height: 30rem;
+  height: 37rem;
 }
 
 .skillBoxContainer {
@@ -86,13 +84,21 @@ body {
   margin-bottom: 1rem;
   flex: 1;
   height: auto;
-  font-weight: 500;
-  font-size: 17px;
-
+  font-weight: 425;
+  font-size: 19px;
   padding: 1rem;
+  padding-bottom: 2rem;
 }
+
 .skillBoxContainer:not(:last-child) {
   border-right: 1px solid #e6ecf8;
+}
+.skillBoxHeader {
+  height: 3rem;
+  padding-top: 1rem;
+}
+.skillBoxPara {
+  margin-top: 3.5rem;
 }
 /* Styles for smaller screens (phones) */
 @media (max-width: 975px) {
@@ -101,17 +107,20 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .aboutContent {
+    padding: 3rem;
+    padding-bottom: 12rem;
+  }
   .skillsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the container vertically and horizontally */
-    padding: 2rem; /* Add padding instead of margin */
-
+    align-items: center;
+    padding: 2rem;
     border-radius: 15px;
     border-top: 1px solid #e6ecf8; /* Add top border for phones */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    min-width: 300px; /* Adjust the value as needed */
+    min-width: 300px;
     height: fit-content;
     margin: 0rem 3rem;
   }
@@ -121,20 +130,18 @@ body {
     height: fit-content;
   }
 
-  /* .skillBoxContainer {
-    height: fit-content;
-    /* height: auto; Adjust height for phones 
-  } */
-
   .skillBoxContainer:not(:last-child) {
-    border-right: none; /* Remove right border for phones */
+    border-right: none;
     border-bottom: 1px solid #e6ecf8; /* Add bottom border for phones */
+  }
+  .skillBoxPara {
+    margin-top: 2rem;
   }
 }
 
 /* Projects*/
 .projectsContainer {
-  margin-top: 90rem;
+  margin-top: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,11 +156,17 @@ body {
   flex-wrap: wrap;
   transition: all 0.9s ease;
 }
+.card {
+  width: 25rem;
+  height: 15rem;
+}
 .card-container {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  text-decoration: "none";
 }
 .card-button {
   opacity: 0;
@@ -166,9 +179,19 @@ body {
 .card:hover .card-button {
   opacity: 1;
 }
+.cardContent {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .cardContent {
+  opacity: 1;
+}
 @media (max-width: 975px) {
   .projectsContainer {
-    margin-top: 140rem;
+    margin-top: 160rem;
+  }
+  .card {
+    width: 22rem;
   }
 }
 
