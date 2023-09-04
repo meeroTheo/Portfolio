@@ -11,7 +11,7 @@ const SkillBox = ({ skill }) => {
       sub = "Dev Tools";
       break;
     case 3:
-      sub = "Stuff";
+      sub = "Want to Visit";
       break;
     default:
       sub = "";
