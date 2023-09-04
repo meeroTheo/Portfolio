@@ -4,7 +4,8 @@ const About = ({ skills, para }) => {
     <div className="aboutContainer">
       <div className="aboutContent">
         <h2>About Me</h2>
-        <p>{para}</p>
+        
+        <p className='aboutPara'>{para}</p>
       </div>
       <div className="skillsContainer">
         <Skills skills={skills} />

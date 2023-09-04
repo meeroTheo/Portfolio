@@ -74,8 +74,13 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-}
+  font-size: large;
 
+}
+.aboutPara{
+  text-align: center;
+  padding:2rem 5rem;
+}
 
 /*Skills*/
 .skillsContainer {
@@ -154,6 +159,9 @@ body {
   }
   .skillBoxPara {
     margin-top: 2rem;
+  }
+  .aboutPara{
+    padding:0rem;
   }
 }
 
