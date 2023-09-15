@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
 # dependencies
-/node_modules
+Frontend/node_modules
+FullStack/node_modules
 /.pnp
 .pnp.js
 
@@ -9,7 +11,9 @@
 /coverage
 
 # production
-
+FullStack/build
+Frontend/public/assets
+userdata.js
 # misc
 .env
 .DS_Store
