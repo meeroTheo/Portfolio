@@ -1,8 +1,14 @@
 import { Card, Button } from "react-bootstrap";
-
 const PersonalProject = ({ project }) => {
+    
+  const style = {
+    backgroundImage: `url('../assets/${project.imageSrc}')`,
+    backgroundSize: "100% auto",
+
+  }
   return (
-    <Card className="card">
+    <Card className="card" style = {style}>
+      
       <Card.Body className="card-container">
         <div className="cardContent">
           <Card.Title>{project.title}</Card.Title>
