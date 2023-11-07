@@ -212,6 +212,29 @@ body {
 .card:hover .cardContent {
   opacity: 1;
 }
+.fade-card {
+  position: relative;
+  background-size: 100% auto;
+  border-width: 0;
+  
+}
+
+.fade-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-card:hover::before {
+  opacity: 1;
+}
+
 @media (max-width: 975px) {
   .projectsContainer {
     margin-top: 160rem;

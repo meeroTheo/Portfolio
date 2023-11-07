@@ -4,10 +4,10 @@ const PersonalProject = ({ project }) => {
   const style = {
     backgroundImage: `url('../assets/${project.imageSrc}')`,
     backgroundSize: "100% auto",
-
+    elevation: 0,
   }
   return (
-    <Card className="card" style = {style}>
+    <Card className="card fade-card" style = {style}>
       
       <Card.Body className="card-container">
         <div className="cardContent">
