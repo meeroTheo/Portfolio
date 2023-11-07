@@ -1,4 +1,5 @@
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const PersonalProject = ({ project }) => {
     
   const style = {
@@ -15,16 +16,24 @@ const PersonalProject = ({ project }) => {
           <Card.Text>{project.short}</Card.Text>
         </div>
         <div>
-          <a
-            href={project.git}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
-          >
-            <Button className="card-button" variant="outline-dark">
-              Go →
-            </Button>
-          </a>
+        {project.id === 1 ? (
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <Button className="card-button" variant="outline-dark">
+                Request
+              </Button>
+            </Link>
+          ) : (
+            <a
+              href={project.git}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <Button className="card-button" variant="outline-dark">
+                Go →
+              </Button>
+            </a>
+          )}
         </div>
       </Card.Body>
     </Card>
