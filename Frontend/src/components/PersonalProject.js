@@ -2,15 +2,17 @@ import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const PersonalProject = ({ project }) => {
     
+  const imageLoc = `../assets/${project.imageSrc}`
   const style = {
-    backgroundImage: `url('../assets/${project.imageSrc}')`,
+    backgroundImage: `url('${imageLoc}')`,
     backgroundSize: "100% auto",
     elevation: 0,
   }
   return (
-    <Card className="card fade-card" style = {style}>
+    <Card className="card" style = {style} >
       
-      <Card.Body className="card-container">
+      <Card.Body className="card-container" >
+        
         <div className="cardContent">
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.short}</Card.Text>
