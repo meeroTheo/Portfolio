@@ -18,7 +18,7 @@ const PersonalProject = ({ project }) => {
           <Card.Text>{project.short}</Card.Text>
         </div>
         <div>
-        {project.id === 1 ? (
+        {project.id === 1 || project.id===2 ? (
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <Button className="card-button" variant="outline-dark">
                 Request
