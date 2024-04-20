@@ -11,7 +11,6 @@ FullStack/node_modules
 /coverage
 
 # production
-FullStack/build
 Frontend/public/assets
 userdata.js
 # misc
