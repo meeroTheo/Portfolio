@@ -1,6 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -11,32 +10,30 @@ export default {
       fontFamily: {
         sans: [
           '-apple-system',
-          'BlinkMacSystemFont',   
-          '"Segoe UI"',          
-          'Roboto',               
-          '"Helvetica Neue"',     
-          'Arial',                
-          'sans-serif',           
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
           '"Apple Color Emoji"',
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
-          ...defaultTheme.fontFamily.sans, 
+          ...defaultTheme.fontFamily.sans,
         ],
       },
       colors: {
-      // Frontend
-      'react': '#61DAFB !important',        
-      'angular': '#DD0031',      
-      // Backend
-      'python': '#3776AB',       
-      'fastapi': '#009688',      
-      'nodejs': '#68A063',       
-      // Databases
-      'postgresql': '#336791',   
-      'mongodb': '#4DB33D',       
-    },
+        'react': '#61DAFB !important',
+        'angular': '#DD0031',
+        'python': '#3776AB',
+        'fastapi': '#009688',
+        'nodejs': '#68A063',
+        'postgresql': '#336791',
+        'mongodb': '#4DB33D',
+        'kotlin': '#7972e3',
+      },
       boxShadow: {
-        'custom': '0px 8px 16px rgba(0,0,0,0.05), 0px 4px 8px rgba(0,0,0,0.04)', 
+        'custom': '0px 8px 16px rgba(0,0,0,0.05), 0px 4px 8px rgba(0,0,0,0.04)',
       },
       borderRadius: {
         '32px': '32px',
