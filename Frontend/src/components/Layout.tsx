@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import SocialIcons from './SocialIcons';
 
-const headshotSrc = '/assets/self.jpg';
+const headshotSrc = '/self.jpg';
 
 const scrollingTexts = [
   "Full Stack Developer",
