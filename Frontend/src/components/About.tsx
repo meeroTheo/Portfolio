@@ -63,37 +63,37 @@ const About = () => {
             <div id="images-container" className="relative sm:-left-6 max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
                 <div id="image1-container" className="relative z-20 w-[130%] will-change-transform pointer-events-none bottom-[-15%] left-[5%] motion-safe:opacity-0 motion-safe:-rotate-45 motion-safe:-translate-x-full motion-safe:-translate-y-full motion-reduce:-rotate-12">
                     <img
-                        src="/public/assets/about-image1.jpg" id="image1" alt="image 1" width={4032} height={3024}
+                        src="/assets/about-image1.jpg" id="image1" alt="image 1" width={4032} height={3024}
                         className="select-none rounded-xl brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
                 <div id="image2-container" className="relative z-20 -bottom-[6%] right-[-6%] sm:right-[-15%] motion-safe:rotate-45 will-change-transform pointer-events-none motion-safe:opacity-0 motion-safe:translate-x-full motion-safe:-translate-y-full motion-reduce:rotate-6">
                     <img
-                        src="/public/assets/about-image2.jpg" id="image2" alt="image 2" width={3024} height={4032}
+                        src="/assets/about-image2.jpg" id="image2" alt="image 2" width={3024} height={4032}
                         className="select-none rounded-xl brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
                 <div id="image3-container" className="relative z-10 w-[105%] bottom-[15%] left-[-5%] sm:left-[5%] sm:col-start-1 sm:row-start-2 will-change-transform pointer-events-none motion-safe:rotate-45 motion-safe:opacity-0 motion-safe:-translate-x-full motion-reduce:rotate-12 motion-safe:translate-y-full">
                     <img
-                        src="/public/assets/about-image5.jpg" id="image3" alt="image 3" width={3024} height={4032}
+                        src="/assets/about-image5.jpg" id="image3" alt="image 3" width={3024} height={4032}
                         className="select-none rounded-xl brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
                 <div id="image4-container" className="relative z-20 hidden sm:block w-[95%] left-[10%] bottom-0 will-change-transform pointer-events-none motion-reduce:rotate-12 motion-safe:rotate-[80deg] motion-safe:opacity-0 motion-safe:-translate-y-full motion-safe:translate-x-full">
                     <img
-                        src="/public/assets/about-image6.jpg" id="image4" alt="image 4" width={2160} height={2880}
+                        src="/assets/about-image6.jpg" id="image4" alt="image 4" width={2160} height={2880}
                         className="select-none rounded-xl brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
                 <div id="image5-container" className="relative w-[130%] top-[-18%] sm:w-[140%] will-change-transform pointer-events-none motion-reduce:-rotate-6 motion-safe:-rotate-45 motion-safe:opacity-0 motion-safe:translate-x-full motion-safe:translate-y-full">
                     <img
-                        src="/public/assets/about-image3.jpg" id="image5" alt="image 5" width={4032} height={3024}
+                        src="/assets/about-image3.jpg" id="image5" alt="image 5" width={4032} height={3024}
                         className="select-none rounded-xl brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
                 <div id="image6-container" className="relative hidden z-20 sm:block w-[95%] left-[10%] top-[-26%] will-change-transform pointer-events-none motion-reduce:-rotate-12">
                     <img
-                        src="/public/assets/about-image4.jpg" id="image6" alt="image 6" width={3024} height={4032}
+                        src="/assets/about-image4.jpg" id="image6" alt="image 6" width={3024} height={4032}
                         className="select-none rounded-lg brightness-90 w-full h-auto" draggable="false" loading="lazy"
                     />
                 </div>
